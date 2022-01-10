@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+} 
+body {
+    background-color: #00bb77;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23000' fill-opacity='.1' points='120 0 120 60 90 30 60 0 0 0 0 0 60 60 0 120 60 120 90 90 120 60 120 0'/%3E%3C/svg%3E");
+}
+.box-to-center-card {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-to-center-card.xmas {
+    background-image: url("images/860.jpeg");
+}
+.card-box {
+    width: 1000px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+.left-block {
+    height: 600px;
+    width: 250px;
+    border-right: 2px solid #8d8d8d;
+}
+.profile-photo {
+    display: flex;
+    width: 100%;
+    height: 180px;
+    justify-content: center;
+    align-items: center;
+}
+.profile-photo .pfp {
+    border-radius: 50%;
+}
+.nav-block {
+    width: 100%;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #8d8d8d;
+}
+.nav-links {
+    list-style: none;
+    text-align: center;
+}
+.nav-links a {
+    text-transform: uppercase;
+    font-size: 24px;
+    text-decoration: none;
+    color: #121212;
+    line-height: 100px;
+}
+.nav-links a:hover {
+    text-decoration: underline 2px;
+}
+.right-block {
+    width: 750px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.type-writer {
+    width: 270px;
+    margin-top: 80px;
+}
+.type-writer h1 {
+    font-size: 32px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .1em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .07em; /* Adjust as needed */
+    animation: 
+        typing 1.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+.intro {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 1.5em;
+}
+.bottom-block {
+    height: 70px;
+    width: 750px;
+}
+.bottom-block button{
+    background: none;
+    color: inherit;
+    border: 1px solid #8d8d8d;
+    position: relative;
+    left: 690px;
+    bottom: 20px;
+}
+.bottom-block button:hover {
+    cursor: pointer;
+}
